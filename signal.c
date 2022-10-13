@@ -2,27 +2,25 @@
 #include <signal.h>
 #include <unistd.h>
 
+int i = 1;
 
-void hola(int signalNiumb){
-    printf("Recibi la senial %d ", signalNiumb);
-
+void hola(int signalNumb){
+    printf("Recibi la senial %d ", signalNumb);
 }
 
-int cond;
-void terminarWhile(int sigNumber){
-printf("Terminando while");
-cond = 0;
+void terminarwhile(int signalNumber){
+    printf("Terminando while");
+    i = 0;
 }
-
 
 int main(){
-    signal(12,terminarWhile);
+    signal(12,terminarwhile);
     signal(2,hola);
-    int cond = 1;
-    while(cond == 1){
+    while(1 == i){
         printf("trabajando\n");
-        sleep(1);   
+        sleep(1);
     }
     printf("Aqui nunca llega\n");
     return 0;
 }
+
