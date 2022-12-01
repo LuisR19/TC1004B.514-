@@ -2,10 +2,10 @@
 #include <ESP8266WiFi.h>
 #include "FirebaseESP8266.h"
 
-#define WIFI_SSID "INFINITUM669F_2.4"
-#define WIFI_PASSWORD "MGPqN9E4tY"
-#define FIREBASE_HOST "https://li-tec-default-rtdb.firebaseio.com/"
-#define FIREBASE_AUTH "1JuJwCYldFn5OW1Iplng7cxC8Qsu8rCg0ZX5uG6g"
+#define WIFI_SSID 
+#define WIFI_PASSWORD 
+#define FIREBASE_HOST 
+#define FIREBASE_AUTH 
 
 #define LED 16 // D0
 #define SENSOR_LUZ_LED 5 // D1
